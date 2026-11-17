@@ -12,17 +12,20 @@ const router = express.Router();
 
 const activityValidation = [
   body('type')
-    .isIn([
-      'walking',
-      'running',
-      'cycling',
-      'workout',
-      'yoga',
-      'swimming',
-      'sports',
-      'other',
-    ])
-    .withMessage('Invalid activity type'),
+  .isIn([
+    'walking',
+    'running',
+    'cycling',
+    'workout',
+    'yoga',
+    'swimming',
+    'sports',
+    'other',
+    'gym',
+    'dancing',
+    'skipping',
+  ])
+  .withMessage('Invalid activity type'),
 
   body('durationMinutes')
     .isInt({ min: 1, max: 1440 })

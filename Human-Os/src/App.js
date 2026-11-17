@@ -2725,7 +2725,7 @@ useEffect(() => {
             }
 
             const response = await fetch(
-                "http://localhost:5000/api/activity",
+                "https://humanos-p8rl.onrender.com/api/activity",
                 {
                     method: "GET",
                     headers: {
@@ -2780,7 +2780,7 @@ useEffect(() => {
     localStorage.getItem("accessToken") ||
     localStorage.getItem("token");
 
-fetch("http://localhost:5000/api/activity", {
+fetch("https://humanos-p8rl.onrender.com/api/activity", {
     method: "POST",
     headers: {
         Authorization: `Bearer ${token}`,
@@ -3485,7 +3485,7 @@ function ProfileScreen({ profile, setProfile }) {
             };
 
             const response = await fetch(
-                "http://localhost:5000/api/profile",
+                "https://humanos-p8rl.onrender.com/api/profile",
                 {
                     method: "PUT",
                     headers: {
@@ -4299,7 +4299,7 @@ function Dashboard() {
 
                    const response =
     await fetch(
-        `http://localhost:5000/api/profile?t=${Date.now()}`,
+        `https://humanos-p8rl.onrender.com/api/profile?t=${Date.now()}`,
         {
             method: "GET",
             cache: "no-store",

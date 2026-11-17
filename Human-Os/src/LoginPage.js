@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const API_BASE = "http://localhost:5000";
+const API_BASE = "https://humanos-p8rl.onrender.com";
 
 export default function LoginPage({ onLogin }) {
     const [mode, setMode] = useState("login");
